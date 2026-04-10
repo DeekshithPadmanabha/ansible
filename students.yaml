@@ -1,0 +1,27 @@
+- name: "Sivakumar reddy"
+  DOB: "1999-10-01"
+  MobileNumber: 1937447563
+  addresses:
+  - FlatNumber: 104
+    street: "gandhi Nagar"
+    City: "Hyderabad"
+    Type: "Perm"
+
+  - FlatNumber: 104
+    street: "gandhi Nagar"
+    City: "Hyderabad"
+    Type: "Current"  
+
+- name: "Suresh"
+  DOB: "1999-10-01"
+  MobileNumber: 1937447663
+  addresses:
+  - FlatNumber: 104
+    street: "gandhi Nagar"
+    City: "Hyderabad"
+    Type: "Perm"
+
+  - FlatNumber: 104
+    street: "gandhi Nagar"
+    City: "Hyderabad"
+    Type: "Current"  

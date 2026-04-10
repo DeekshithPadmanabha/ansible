@@ -1,0 +1,20 @@
+{
+    "FirstName": "Sivakumar Reddy",
+    "DOB": "1999-01-01",
+    "Email": "info@joindevops.com",
+    "Addresses": [
+        {
+            "type": "Perm",
+            "FlatNumber": 104,
+            "Street": "Gandhi Nagar",
+            "City": "Hyderabad"
+        },
+        {
+            "type": "Current",
+            "FlatNumber": 104,
+            "Street": "Gandhi Nagar",
+            "City": "Hyderabad"
+        }
+    ],
+    "Skills": ["java", "devops", "cloud"]
+}
