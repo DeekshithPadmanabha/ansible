@@ -1,10 +1,5 @@
-- name: play level variables
-  hosts: web
-  vars:
-    COURSE: "DevOps with aws"
-    DURATION: "140 hrs"
-    TRAINER: "Sivakumar reddy"
+- name: ping the server
+  hosts: all
   tasks:
-  - name: print variables
-    ansible.builtin.debug:
-      msg: "Course is: {{ Course }}, Trainer is: {{ TRAINER }}"
+  - name: ping the web server
+    ansible.builtin.ping:   
