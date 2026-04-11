@@ -1,7 +1,7 @@
 - name: Demo on map to list
   hosts: local
   connection: local
-  
+  vars:
     tags:
       name: ansible
       project: roboshop
