@@ -1,7 +1,7 @@
 - name: Demo on map to list
   hosts: local
   connection: local
-  tagsmap:
+  tags:
     name: ansible
     project: Roboshop
     component: catalogue
@@ -9,4 +9,4 @@
   tasks:
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "{{ tagsmap | dict2items }}"  
+      msg: "{{ tags | dict2items }}"  
