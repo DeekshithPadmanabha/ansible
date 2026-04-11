@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    tagsMap:
+    tagsMap :
       name: ansible
       project: roboshop
       component: catalogue
@@ -10,4 +10,4 @@
   tasks:
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "{{ tagsMAP | dict2items }}"  
+      msg: "{{ tagsMap | dict2items }}"  
