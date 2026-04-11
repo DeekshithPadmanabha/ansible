@@ -1,0 +1,12 @@
+- name: Demo on map to list
+  hosts: local
+  connection: local
+  tagsmap:
+    name: ansible
+    project: Roboshop
+    component: catalogue
+
+  tasks:
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsmap | dict2items }}"  
