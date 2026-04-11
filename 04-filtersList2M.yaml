@@ -1,0 +1,24 @@
+- name: Demo on list to map
+  hosts: local
+  connection: local
+  vars:
+    tagsList :
+      [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
+
+  tasks:
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsList | items2dict }}"  
