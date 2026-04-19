@@ -3,8 +3,22 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+    course: "Devops with ansible"
+    myIP: "246.567.890.287"
   tasks:
   - name: convert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+
+  - name: convert upper case
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"    
+
+  - name: convert lower case
+    ansible.builtin.debug:
+      msg: "{{ course | lower }}"     
+
+  - name: check ipv4
+    ansible.builtin.debug:
+      msg: "{{ myIP | ansible.utils.ipv4 }}"     
       
